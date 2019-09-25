@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Material Design for Bootstrap fonts and icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Roboto+Condensed:400,700|Material+Icons">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+	<title>myCMC</title>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<nav id="nav-primary" class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="/"><img src="img/logo/logo-mycmc.svg" class="logo" alt="myCMC" width="110"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item nav-dropdown">
+				  <a class="nav-link" href="#" role="button">
+					Inventory <span class="arrow-down"></span>
+				  </a>
+				  	<!-- Inventory Dropdown -->
+				  	<div class="nav-dropdown-container">
+						<div class="nav-dropdown-content">
+							<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="pills-rebar-tab" data-toggle="pill" href="#pills-rebar" role="tab" aria-controls="pills-rebar" aria-selected="true">Rebar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="pills-angles-tab" data-toggle="pill" href="#pills-angles" role="tab" aria-controls="pills-angles" aria-selected="false">Angles</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="pills-flats-tab" data-toggle="pill" href="#pills-flats" role="tab" aria-controls="pills-flats" aria-selected="false">Flats</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="pills-round-tab" data-toggle="pill" href="#pills-round" role="tab" aria-controls="pills-round" aria-selected="false">Round</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="pills-square-tab" data-toggle="pill" href="#pills-square" role="tab" aria-controls="pills-square" aria-selected="false">Square</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="pills-favs-tab" data-toggle="pill" href="#pills-favs" role="tab" aria-controls="pills-favs" aria-selected="false">Favorites</a>
+								</li>	
+							</ul>
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane sub-tabs active" id="pills-rebar" role="tabpanel" aria-labelledby="pills-rebar-tab">
+									<div class="sub-tabs-content">
+										<div class="nav sub-tabs-nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+											<a class="nav-link active show" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all" aria-selected="false">All</a>
+											<a class="nav-link" id="v-pills-straight-tab" data-toggle="pill" href="#v-pills-straight" role="tab" aria-controls="v-pills-straight" aria-selected="false">Straight</a>
+											<a class="nav-link" id="v-pills-coils-tab" data-toggle="pill" href="#v-pills-coils" role="tab" aria-controls="v-pills-coils" aria-selected="false">Coils</a>
+											<a class="nav-link" id="v-pills-spools-tab" data-toggle="pill" href="#v-pills-spools" role="tab" aria-controls="v-pills-spools" aria-selected="false">Spools</a>
+										</div>
+										<div class="tab-content" id="v-pills-tabContent">
+											<div class="tab-pane active show" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">
+												<div class="row">
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#3 (10mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#7(10mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#11 (10mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#18 (55mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#4 (13mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#8 (13mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#11 (13mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#18 (57mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#5 (10mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#9 (10mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#14 (43mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#21 (10mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#6 (13mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#10 (13mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#14 (45mm)</a></div>
+													<div class="col-3"><a class="btn btn-primary" href="#" role="button">#24 (76mm)</a></div>
+												</div>
+											</div>
+											<div class="tab-pane" id="v-pills-straight" role="tabpanel" aria-labelledby="v-pills-straight-tab">straight content</div>
+											<div class="tab-pane" id="v-pills-coils" role="tabpanel" aria-labelledby="v-pills-coils-tab">coils content</div>
+											<div class="tab-pane" id="v-pills-spools" role="tabpanel" aria-labelledby="v-pills-spools-tab">spools content</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="pills-angles" role="tabpanel" aria-labelledby="pills-angles-tab">angles content</div>
+								<div class="tab-pane" id="pills-flats" role="tabpanel" aria-labelledby="pills-flats-tab">flats content</div>
+								<div class="tab-pane" id="pills-round" role="tabpanel" aria-labelledby="pills-round-tab">round content</div>
+								<div class="tab-pane" id="pills-square" role="tabpanel" aria-labelledby="pills-square-tab">square content</div>
+								<div class="tab-pane" id="pills-favs" role="tabpanel" aria-labelledby="pills-ffavslats-tab">favs content</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Docs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">ATB</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="orders.html">Orders</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Quotes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Ship It</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Releases</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Reports</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Notifications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Cart</a>
+				</li>
+			  </ul>
+			  <div id="nav-secondary" class="my-2 my-lg-0">
+				<ul class="nav justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link" href="#">CMC Steel (303552)</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Settings</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Logout</a>
+					</li> 
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+	</header>
+
+	<!-- Carousel -->
+	<section>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/carousel/spooled.jpg" alt="First slide">
+					<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption-title">CMC Introduces Spooled Rebar</div>
+						<p>CMC is the first and only producer of hot-rolled SPOOLED REBAR in the United States.</p>
+						<button type="button" class="btn carousel-caption-btn">Learn More</button>
+					</div>
+					<div class="carousel-overlay"></div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="https://via.placeholder.com/1920x706.png?text=Second Slide" alt="Second Slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="https://via.placeholder.com/1920x706.png?text=Third Slide" alt="Third Slide">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+
+	<!-- Main Content -->
+	<main class="main" style="height:500px" role="main">
+		<div class="container resources">
+			<h2 class="text-center my-5">Helpful Resources</h2>
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				</div>
+
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					<h2>Heading</h2>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				</div>
+
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-9">
+					<div class="row">
+						<div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0 d-flex flex-column">
+							<div class="footer-hdr">Inventory</div>
+							<a href="#">Item 1</a>
+							<a href="#">Item 2</a>
+							<a href="#">Item 3</a>
+							<a href="#">Item 4</a>
+							<a href="#">Item 5</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0 d-flex flex-column">
+							<div class="footer-hdr">Docs</div>
+							<a href="#">Item 1</a>
+							<a href="#">Item 2</a>
+							<a href="#">Item 3</a>
+							<a href="#">Item 4</a>
+							<a href="#">Item 5</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0 d-flex flex-column">
+							<div class="footer-hdr">Products</div>
+							<a href="#">Item 1</a>
+							<a href="#">Item 2</a>
+							<a href="#">Item 3</a>
+							<a href="#">Item 4</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2 mb-4 mb-md-0 d-flex flex-column">
+							<div class="footer-hdr">Orders</div>
+							<a href="#">Item 1</a>
+							<a href="#">Item 2</a>
+							<a href="#">Item 3</a>
+							<a href="#">Item 4</a>
+							<a href="#">Item 5</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2 d-flex flex-column">
+							<div class="footer-hdr">Pricing</div>
+							<a href="#">Item 1</a>
+							<a href="#">Item 2</a>
+							<a href="#">Item 3</a>
+							<a href="#">Item 4</a>
+							<a href="#">Item 5</a>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2 d-flex flex-column">
+							<div class="footer-hdr">Quotes</div>
+							<a href="#">Item 1</a>
+							<a href="#">Item 2</a>
+							<a href="#">Item 3</a>
+							<a href="#">Item 4</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="footer-contact pt-5 pt-md-0">
+						<div class="footer-contact-hdr">Contact Us</div>
+						<div class="footer-contact-phone">1-800-621-0262</div>
+						<div class="footer-contact-address">
+							Commercial Metals Company<br/>
+							6565 N. Macarthur Blvd<br/>
+							Irving, TX 92841
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mt-4">
+			<div class="row">
+				<div class="col-12">© 2019 Commercial Metals Company</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap-material-design.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

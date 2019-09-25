@@ -1,0 +1,33 @@
+.footer {
+    background-color: #eff3f3;
+    font-family: $font-secondary;
+    padding: 3rem 1rem 1.5rem;
+
+    a {
+        @include link-colors($black, $black);
+    }
+
+    &-hdr {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    &-contact {
+        font-size: 1.2rem;
+
+        &-hdr {
+            font-size: 1.8rem;
+            line-height: 1em;
+        }
+
+        &-phone {
+            font-size: 1.8rem;
+            font-weight: 700;
+
+            &:hover {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+// -----------------
+// Project Variables
+// -----------------
+
+// ----------------------
+// Dimensions + Grid Vars
+// ----------------------
+$max-width-px:		1200px;
+$base-font-size:	16px;
+$base-line-height:	26px;
+$hdr-height: 75px;
+$hdr-height-mbl: 60px;
+
+// -------------------
+// Typography Settings
+// -------------------
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Condensed', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// --------------------------
+// Colors
+// --------------------------
+
+// Primary Colors
+$color-primary: #052668;
+$color-primary-dark: darken($color-primary, 7.5%);
+$color-primary-light: lighten($color-primary, 7.5%);
+
+// Secondary Colors
+$color-secondary: #fad600;
+$color-secondary-dark: darken($color-secondary, 7.5%);
+$color-secondary-light: lighten($color-secondary, 7.5%);
+
+// Tertiary Colors
+$color-tertiary: #36aee5;
+$color-tertiary-dark: darken($color-tertiary, 7.5%);
+$color-tertiary-light: lighten($color-tertiary, 7.5%);
+
+$white: #fff;
+$black: #212529;
+
+// --------------------------
+// Links
+// --------------------------
+$link-color: #80d9ff;
+$link-color-hover: darken($link-color, 15%);

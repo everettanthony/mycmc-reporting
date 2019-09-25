@@ -1,0 +1,48 @@
+.carousel {
+    &-control-next, 
+    &-control-prev {
+        width: 8%;
+    }
+
+    &-caption {
+        bottom: auto;
+        font-size: 1.5rem;
+        margin-top: -175px;
+        max-width: 748px;
+        text-align: left;
+        top: 50%;
+        z-index: 10;
+    
+        &-title {
+            color: $color-secondary;
+            font-family: $font-secondary;
+            font-size: 4.8rem;
+            font-weight: $font-weight-bold;
+            line-height: 1em;
+            margin: 0 0 8px -5px;
+            text-transform: uppercase;
+        }
+    
+        &-btn {
+            background: $color-primary;
+            color: $white;
+            font-size: 1.2rem;
+            padding: .9rem 1rem;
+    
+            &:hover {
+                background: $color-primary-light;
+                color: $white;
+            }
+        }
+    }
+
+    &-overlay {
+        background-color: rgba(0,0,0,.3);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+    }
+}

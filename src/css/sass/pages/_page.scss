@@ -1,0 +1,11 @@
+.page {
+    padding: 1.8rem 1.5rem;
+
+    &-hdr {
+        color: $color-primary;
+        font-family: $font-secondary;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+}

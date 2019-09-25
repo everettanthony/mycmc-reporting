@@ -1,0 +1,13 @@
+// -----
+// Links
+// -----
+a {
+	@include link-colors($link-color, $link-color-hover);	
+}
+
+// -----
+// Header
+// -----
+h1 {
+    color: $color-primary;
+}

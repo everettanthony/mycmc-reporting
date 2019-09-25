@@ -1,0 +1,127 @@
+#nav-primary {
+    background: $color-primary;
+
+    @media (min-width: 1200px) {
+        padding: 0 25px; 
+    }
+    
+    .nav-link {
+        align-items: center;
+        display: flex;
+        font-size: .8rem;
+        padding: 14px 2px;
+        position: relative;
+        transition: color 200ms ease-in-out;
+        @include link-colors($white, $color-secondary);
+
+        @media (min-width: 1200px) {
+            padding: 26px 10px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: .95rem;
+            padding: 32px 15px;
+        }
+    }
+
+    .navbar-brand {
+        @media (min-width: 1200px) {
+            padding: 0;
+        }
+
+        .logo {
+            width: 94px;
+
+            @media (min-width: 1400px) {
+                width: 110px;
+            }  
+        }
+    }
+
+    .nav-search-input {
+        background-image: linear-gradient(0deg,$color-tertiary 1px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+        flex-grow: 1;
+        padding-left: 2px;
+
+        @media (min-width: 1200px) {
+            flex-grow: 0;
+        }
+    }
+
+    .nav-search-btn {
+        border: 1px solid $color-tertiary-dark;
+        color: $color-tertiary;
+    }
+
+    .nav-pills {
+        .nav-item {
+            .nav-link {
+                border-radius: 3px;
+                color: $color-primary;
+                padding: 10px 20px;
+                transition: none;
+
+                &:hover,
+                &.active {
+                    background: $color-primary;
+                    color: $white;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 5px 0;
+
+        .sub-tabs {
+            &-content {
+                display: flex;
+            }
+
+            &-nav {
+                border-right: 1px solid #d4d4d4;
+                padding-right: 28px;
+            }
+
+            .nav-link {
+                color: $color-primary; 
+                padding: 12px 15px;
+                transition: none;
+
+                &.active {
+                    color: $color-tertiary;
+                }
+            }
+
+            .tab-content {
+                max-width: 700px;
+                padding: 4px 30px;
+            }
+
+            .btn-primary {
+                color: $color-tertiary-dark;
+                font-size: .95rem;
+
+                &:hover {
+                    background: #f7f7f7;
+                }
+            }
+        }
+        
+    }
+}
+
+#nav-secondary {
+    .nav-link {
+        font-size: .8rem;
+        @include link-colors($color-secondary, $white); 
+
+        @media (min-width: 1400px) {
+            font-size: .9rem;
+        }        
+    }
+}
