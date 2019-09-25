@@ -1,5 +1,18 @@
+.table {
+    font-size: .85rem;
+
+    @media (min-width: 992px) {
+        font-size: 1rem;
+    }
+}
+
 .table thead th {
     color: $black;
+    font-size: .85rem;
+
+    @media (min-width: 992px) {
+        font-size: .95rem;
+    }
 }
 
 .page-item .page-link {
@@ -33,40 +46,6 @@
     }
 }
 
-.dataTables_wrapper .custom-select {
-    width: auto;
-    display: inline-block;
-    padding: .375rem 1.75rem .375rem .75rem;
-    line-height: 1.5;
-    color: #495057;
-    vertical-align: middle;
-    height: calc(2.125rem + 2px);
-    font-size: 75%;
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
-    background-size: 8px 10px;
-    border: 1px solid rgba(0,0,0,.26);
-    border-radius: .125rem;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.custom-select:focus {
-    border-color: #98a2db;
-    outline: 0;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 5px rgba(152,162,219,.5);
-}
-
-.dataTables_filter {
-    margin-left: auto;
-
-    input[type=search] {
-        background-image: linear-gradient(0deg,$color-primary 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
-        font-size: .95rem;
-        padding: .35rem;
-        width: 300px !important;
-    }
-}
-
 table.dataTable tr.dtrg-group.dtrg-level-1 td, 
 table.dataTable tr.dtrg-group.dtrg-level-2 td {
    padding: .55em .75em;
@@ -91,11 +70,29 @@ table.dataTable tr.dtrg-group.dtrg-level-1 td {
 }
 
 .tbl-hdr {
-    align-items: flex-end;
+    align-items: flex-start;
     display: flex;
+    flex-wrap: wrap;
+
+    label {
+        font-size: .85rem;
+
+        @media (min-width: 992px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        align-items: flex-end;
+    }
 
     .dt-buttons {
-        margin-left: 10px;
+        margin: 0 0 0 auto;
+        width: auto;
+
+        @media (min-width: 992px) {
+            margin: 10px 1px 10px 10px;
+        }
     }
 
     .btn-secondary {
@@ -105,7 +102,11 @@ table.dataTable tr.dtrg-group.dtrg-level-1 td {
         color: $black;
         font-size: .8rem;
         margin-bottom: 0;
-        padding: .375rem 1rem;
+        padding: .375rem .75rem;
+
+        @media (min-width: 992px) {
+            padding: .375rem 1rem;
+        }
 
         &:hover {
             background-color: #e4e4e4;
@@ -135,3 +136,57 @@ table.dataTable tr.dtrg-group.dtrg-level-1 td {
     }
 }
 
+.dataTables_filter {
+    margin: 10px 0 0;
+    width: 100%;
+
+    @media (min-width: 992px) {
+        margin-left: auto;
+        width: auto;
+    }
+
+    label {
+        align-items: center;
+        display: flex;
+        width: 100%;
+
+        @media (min-width: 992px) {
+            display: block;
+            width: auto;
+        }
+    }
+
+    input[type=search] {
+        background-image: linear-gradient(0deg,$color-primary 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+        flex-grow: 1;
+        font-size: .95rem;
+        padding: .35rem;
+
+        @media (min-width: 992px) {
+            width: 300px !important;
+        }     
+    }
+}
+
+.dataTables_wrapper .custom-select {
+    width: auto;
+    display: inline-block;
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    height: calc(2.125rem + 2px);
+    font-size: 13px;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: 8px 10px;
+    border: 1px solid rgba(0,0,0,.26);
+    border-radius: .125rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.custom-select:focus {
+    border-color: #98a2db;
+    outline: 0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 5px rgba(152,162,219,.5);
+}

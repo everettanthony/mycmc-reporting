@@ -1,5 +1,9 @@
 .page {
-    padding: 1.8rem 1.5rem;
+    padding: 1.8rem 1rem;
+
+    @media (min-width: 992px) {
+        padding: 1.8rem 1.5rem;
+    }
 
     &-hdr {
         color: $color-primary;
