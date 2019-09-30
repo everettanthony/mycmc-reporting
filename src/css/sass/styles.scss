@@ -9,9 +9,13 @@
 @import "base/variables";
 @import "base/typography";
 
+// Forms
+@import "forms/input";
+
 // Layout
 @import "layout/backToTop";
 @import "layout/carousel";
+@import "layout/charts";
 @import "layout/dropdown";
 @import "layout/footer";
 @import "layout/nav";
@@ -20,4 +24,5 @@
 
 // Pages
 @import "pages/home"; 
+@import "pages/inventory"; 
 @import "pages/page"; 

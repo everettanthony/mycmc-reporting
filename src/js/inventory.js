@@ -2,25 +2,9 @@ $(document).ready(function() {
     const btnBackToTop = document.querySelector('.back-to-top');
 
     // Initialize Order Status DataTable
-    $('#orderStatus').DataTable( {
+    $('#tblInventory').DataTable( {
         dom: '<"tbl-hdr"lBf>rt<"tbl-btm"ip><"clear">',
         order: [[2, 'asc'], [1, 'asc']],
-        rowGroup: {
-            startRender: function ( rows, group ) {
-                var salaryAvg = rows
-                    .data()
-                    .pluck(5)
-                    .reduce( function (a, b) {
-                        return a + b.replace(/[^\d]/g, '')*1;
-                    }, 0);
-                salaryAvg = $.fn.dataTable.render.number(',', '.', 0, '$').display( salaryAvg );
-    
-                return $('<tr/>')
-                    .append( '<td colspan="5">'+group+'</td>' )
-                    .append( '<td>'+salaryAvg+'</td>' );
-            },
-            dataSrc: [ 2, 1 ]
-        },
         pageLength: 50,
         fixedHeader: true,
         select: {
@@ -81,11 +65,18 @@ $(document).ready(function() {
     }
 
     // Display back to top button based on scroll position
-    function initBackToTop(scroll_pos) {
+    function initBackToTop() {
         bottomVisible() ? btnBackToTop.classList.add('btn-show')
                         : btnBackToTop.classList.remove('btn-show');
+
+        // if (scroll_pos > 1600) {
+        //     btnBackToTop.classList.add('btn-show');
+        // }
+        // else {
+        //     btnBackToTop.classList.remove('btn-show');
+        // }
     }
-    
+
     // Check if bottom is visible
     const bottomVisible = () => document.documentElement.clientHeight + window.scrollY >=
         (document.documentElement.scrollHeight || document.documentElement.clientHeight);
